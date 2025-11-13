@@ -1,47 +1,11 @@
-spec_acc Executable
+# README for Species Accumulation Curve Generator
 
-1. Prerequisites for Deployment 
+This tool uses existing species abundance data to generate a fully permutated and averaged species accumulation curve. The tool assumes that the user has two data sets: upstream and downstream. Each column in the data indicates a sample and each row indicates a unique species.
 
-Verify that MATLAB Runtime(R2025a) is installed.   
-If not, you can run the MATLAB Runtime installer.
-To find its location, enter
-  
-    >>mcrinstaller
-      
-at the MATLAB prompt.
-NOTE: You will need administrator rights to run the MATLAB Runtime installer. 
+New data should replace the existing .csv files in the project.
 
-Alternatively, download and install the Windows version of the MATLAB Runtime for R2025a 
-from the following link on the MathWorks website:
+The program will output as text and will update the .png files to match the input data.
 
-    https://www.mathworks.com/products/compiler/mcr/index.html
-   
-For more information about the MATLAB Runtime and the MATLAB Runtime installer, see 
-"Distribute Applications" in the MATLAB Compiler documentation  
-in the MathWorks Documentation Center.
+Start the program via spec_acc.mlx
 
-2. Files to Deploy and Package
-
-Files to Package for Standalone 
-================================
--spec_acc.exe
--MCRInstaller.exe 
-    Note: if end users are unable to download the MATLAB Runtime using the
-    instructions in the previous section, include it when building your 
-    component by clicking the "Runtime included in package" link in the
-    Deployment Tool.
--This readme file 
-
-
-
-3. Definitions
-
-For information on deployment terminology, go to
-https://www.mathworks.com/help and select MATLAB Compiler >
-Getting Started > About Application Deployment >
-Deployment Product Terms in the MathWorks Documentation
-Center.
-
-
-
-
+There is an option to run without MATLAB via MATLAB Runtime, which is free and can be installed on MATLAB's website. Clicking the .exe file will start the runtime executable.
